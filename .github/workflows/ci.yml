@@ -20,6 +20,11 @@ jobs:
             continue-on-error: false
 
           - operating-system: 'ubuntu-latest'
+            php-version: '8.3'
+            php-ts: nts
+            continue-on-error: false
+
+          - operating-system: 'ubuntu-latest'
             php-version: '8.1'
             php-extensions: parallel
             job-description: 'with ext-parallel'
