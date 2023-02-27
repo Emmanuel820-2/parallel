@@ -113,6 +113,9 @@ jobs:
             composer update --optimize-autoloader --no-interaction --no-progress ${{ matrix.composer-flags }}
             composer info -D
 
+      - name: Run process example
+        run: php examples/process.php
+
       - name: Run tests
         run: vendor/bin/phpunit ${{ matrix.phpunit-flags }}
 
