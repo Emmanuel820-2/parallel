@@ -49,6 +49,12 @@ jobs:
             php-ts: nts
             continue-on-error: false
 
+          - operating-system: 'windows-latest'
+            php-version: '8.2'
+            job-description: 'on Windows'
+            php-ts: nts
+            continue-on-error: false
+
     name: PHP ${{ matrix.php-version }} ${{ matrix.job-description }}
 
     runs-on: ${{ matrix.operating-system }}
