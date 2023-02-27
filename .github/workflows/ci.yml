@@ -23,6 +23,9 @@ jobs:
             php-version: '8.3'
             php-ts: nts
             continue-on-error: false
+            static-analysis: none
+            style-fix: none
+            composer-require-checker-version: none
 
           - operating-system: 'ubuntu-latest'
             php-version: '8.1'
