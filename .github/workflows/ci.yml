@@ -54,6 +54,7 @@ jobs:
             job-description: 'on Windows'
             php-ts: nts
             continue-on-error: false
+            phpunit-flags: --debug
 
     name: PHP ${{ matrix.php-version }} ${{ matrix.job-description }}
 
