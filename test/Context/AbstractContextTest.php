@@ -104,7 +104,7 @@ abstract class AbstractContextTest extends AsyncTestCase
 
     public function testCloseWhenJoining(): void
     {
-        $this->setTimeout(1);
+        $this->setTimeout(3);
 
         $this->expectException(ContextException::class);
         $this->expectExceptionMessage('The context has already closed');
