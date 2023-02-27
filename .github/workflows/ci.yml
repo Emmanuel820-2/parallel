@@ -58,7 +58,7 @@ jobs:
             continue-on-error: false
 
           - operating-system: 'windows-latest'
-            php-version: '8.2'
+            php-version: '8.3'
             job-description: 'on Windows'
             php-ts: nts
             continue-on-error: false
