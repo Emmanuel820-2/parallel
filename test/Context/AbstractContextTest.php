@@ -56,9 +56,9 @@ abstract class AbstractContextTest extends AsyncTestCase
         $context->send(1);
 
         delay(1); // await TCP RST
-            $context->send(1);
-            self::fail('Sending should have failed');
 
+        $context->send(1);
+        self::fail('Sending should have failed');
     }
 
     public function testInvalidScriptPath(): void
